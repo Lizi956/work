@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ka">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>homework</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .my-custom-card {
+        transition: 0.3s ease-in-out;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .my-custom-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+      .card-img-top {
+        height: 200px;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container py-5">
+      <div class="row justify-content-center">
+        <div class="card my-custom-card">
+          <img
+            src="https://blog.turebi.ge/images/news/1529503191.jpg"
+            class="card-img-top"
+            alt="photo"
+          />
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <button
+                type="button"
+                class="btn btn-primary"
+                onclick="showAlert()"
+              >
+                click here
+              </button>
+            </div>
+          </div>
+          <div class="card-footer text-muted">Georgia</div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+      function showAlert() {
+        alert("click");
+      }
+    </script>
+    <script src="./main.js"></script>
+  </body>
+</html>
